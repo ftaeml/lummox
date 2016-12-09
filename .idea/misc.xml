@@ -11,12 +11,6 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.4.2 (/usr/bin/python3.4)" project-jdk-type="Python SDK" />
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-    <option name="sshConnectionType" value="PASSWORD" />
-    <option name="sshExecutablePath" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDmz4/h6guu3vBraN6CkiFhEHB/VJGSb5auyR3NgX7+O53LutENvxNxyjXcqhY2rtWddfhWUFfMNXeIXQ8hF0CHw8P2nqC3WCaZyCePn3vEElyyH0v/o1UkWWgqkYcF7JX4F9sorePdBZHLh7Q/9+3sxeLTSKdG8G2iEM560t2x4g41+nrVhGHgelkybhbAuEuljxiIu8ahNpJyKcL6FW/MmYzTydZtVd0xIYNv0BTr0/RnDVvrpe8sYmnW2J6xVB8FloKHmN9aXNBc8qwWW+ZHrFHT++EGa/O8xDLfwn7D5IRvDI5fTpC2QfOrtUwYo9kxEknSMRFYYCiKkSO0z9ap ftaeml@ftaeml" />
-    <option name="sshUserName" value="academy" />
-  </component>
   <component name="VagrantProjectSettings">
     <option name="instanceFolder" value="" />
     <option name="provider" value="" />
