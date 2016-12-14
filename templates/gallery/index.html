@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+
+    <!-- begin content -->
+    <div id="site_content">
+        <ul class="slideshow">
+            {% for img in images %}
+                <li class="show"><img width="950" height="450" src="{{ img.image.url }}" alt="&quot;{{ img.description }}&quot;"/></li>
+            {% endfor %}
+        </ul>
+    </div>
+    <!-- end content -->
+
+{% endblock %}

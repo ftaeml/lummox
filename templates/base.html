@@ -24,10 +24,17 @@
         <ul class="sf-menu" id="nav">
           <li><a href="{% url "index" %}">до хати</a></li>
           <li class="selected"><a href="{% url "about" %}">Про нас</a></li>
+            <li><a href="#">Світлини</a>
+                <ul>
+                    {% for p in photos %}
+                        <li><a href="{% url "#" %}">{{ p.title }}</a> </li>
+                    {% endfor %}
+                </ul>
+            </li>
           <li><a href="#">Наші портфоліо</a>
             <ul>
-              <li><a href="{% url "portfolio_one" %}">варіант перший</a></li>
-              <li><a href="{% url "portfolio_two" %}">варіант другий</a></li>
+              <li><a href="{% url "album_single" %}">Альбом</a></li>
+              <li><a href="{% url "album_two" %}">Другий альбом</a></li>
             </ul>
           </li>
           <li><a href="{% url "blog" %}">Блог</a></li>
