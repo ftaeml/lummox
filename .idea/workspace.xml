@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5767a1-541f-47ba-ae7f-5d3836afb3bc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/blog/urls.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/blog/comment.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/blog/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/blog/post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/gallery/albums.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/gallery/photo_albums.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery/urls.py" afterPath="$PROJECT_DIR$/gallery/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gallery/views.py" afterPath="$PROJECT_DIR$/gallery/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lummox/settings.py" afterPath="$PROJECT_DIR$/lummox/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lummox/urls.py" afterPath="$PROJECT_DIR$/lummox/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html" afterPath="$PROJECT_DIR$/templates/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/gallery/album_two.html" afterPath="$PROJECT_DIR$/templates/gallery/album_two.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/gallery/index.html" afterPath="$PROJECT_DIR$/templates/gallery/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/gallery/photos.html" afterPath="$PROJECT_DIR$/templates/gallery/photos.html" />
     </list>
     <ignored path="lummox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -552,7 +537,14 @@
       <option name="project" value="LOCAL" />
       <updated>1481715679944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ver.0.3">
+      <created>1482589141926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1482589141926</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -613,7 +605,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ver.0.1" />
     <MESSAGE value="ver.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="ver.0.2" />
+    <MESSAGE value="ver.0.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver.0.3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
