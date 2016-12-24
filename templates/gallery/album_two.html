@@ -2,7 +2,6 @@
 {% load staticfiles %}
 {% load i18n %}
 {% block content %}
-    <
     <!-- begin content -->
     <div id="site_content">
         <!-- start gallery HTML containers -->
@@ -12,7 +11,7 @@
                 <ul class="thumbs noscript">
                     {% for img in images %}
                         <li>
-                            <a class="thumb" href="{{ img.image.url }}"><img src="{{ img.image.url }}" alt="{{ img.description }}" /></a>
+                            <a class="thumb" href="{{ img.image.url }}"><img src="{{ img.image }}" alt="{{ img.description }}" /></a>
                             <div class="caption">
                                 <div class="image-title portfolio_two">{{ img.description }}</div>
                             </div>

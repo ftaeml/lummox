@@ -19,25 +19,12 @@
 
     <!-- begin header -->
     <header>
-      <div id="logo"><h1><a href="#">СВІТЛИНИ</a>ART<a href="#">МАЛЬОВИДЛА</a></h1></div>
+      <div id="logo"><h1><a href="{% url "albums" id=1 %}">СВІТЛИНИ</a>ART<a href="{% url "albums" id=2 %}">МАЛЬОВИДЛА</a></h1></div>
       <nav>
         <ul class="sf-menu" id="nav">
-          <li><a href="{% url "index" %}">до хати</a></li>
+          <li><a href="{% url "gallery" %}">До хати</a></li>
           <li class="selected"><a href="{% url "about" %}">Про нас</a></li>
-            <li><a href="#">Світлини</a>
-                <ul>
-                    {% for p in photos %}
-                        <li><a href="{% url "#" %}">{{ p.title }}</a> </li>
-                    {% endfor %}
-                </ul>
-            </li>
-          <li><a href="#">Наші портфоліо</a>
-            <ul>
-              <li><a href="{% url "album_single" %}">Альбом</a></li>
-              <li><a href="{% url "album_two" %}">Другий альбом</a></li>
-            </ul>
-          </li>
-          <li><a href="{% url "blog" %}">Блог</a></li>
+          <li><a href="{% url "index" %}">Блог</a></li>
           <li><a href="{% url "contact" %}">Зв’язок</a></li>
         </ul>
       </nav>
