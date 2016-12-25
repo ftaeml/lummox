@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+
+    <!-- begin content -->
+    <div id="site_content">
+        <!-- start gallery HTML containers -->
+        <div id="gallery" class="content">
+            <div class="slideshow-container">
+                <div id="loading" class="loader"></div>
+                <div id="slideshow" class="slideshow"></div>
+            </div>
+        </div>
+        <div id="thumb-container">
+            <div id="thumbs" class="navigation">
+                <h1>Portfolio One</h1>
+                <ul class="thumbs noscript">
+                    {% for img in images %}
+                        <li>
+                            <a class="thumb" href="{{ img.image.url }}"><img width="950" height="450" src=" {{ img.image.url}}" alt="{{ img.description}}" /></a>
+                            <div class="caption">
+                                <div class="image-title portfolio_one">&quot;{{ img.description }}&quot;</div>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div id="controls" class="controls portfolio_one"></div>
+            <div id="caption" class="caption-container"></div>
+            <div style="clear: both;"></div>
+            <!-- end gallery HTML containers -->
+        </div>
+    </div>
+    <!-- end content -->
+{% endblock %}
+
