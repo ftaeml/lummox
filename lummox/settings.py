@@ -110,9 +110,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uk-ua'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Kiev'
 
 USE_I18N = True
 
@@ -134,3 +134,14 @@ CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 MEDIA_URL = "/media/"
+
+THUMBNAIL_SUBDIR = 'thumbnails'
+THUMBNAIL_DEBUG = True
+THUMBNAIL_DEFAULT_OPTIONS ={"crop": "smart", "detail": True}
+THUMBNAIL_ALIASES = {
+    '':{
+        'show': {'size': (950, 450), 'crop': True},
+        'gallery': {'size': (950, 0)},
+        'mini': {'size': (75, 75)},
+     },
+}
