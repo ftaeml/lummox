@@ -5,23 +5,18 @@
     <!DOCTYPE HTML>
     <
     <!-- begin content -->
-    <div id="site_content">
+    <div id="site_content" xmlns="http://www.w3.org/1999/html">
         <div id="left_content">
             <div id="blog_container">
                 {% for post in posts %}
                 <div class="blog"><h2>{{ post.published_date|date:"M" }}</h2><h3>{{ post.published_date|date:"d" }}</h3></div>
                 <h4 class="select"><a href="{% url "post" id=post.pk %}">{{ post.title }}</a></h4>
-                <p>{{ post.content }}<a href="{% url "post" id=post.pk %}">читати далі.....</a></p>
+                <p>{{ post.content }}<a href="{% url "post" id=post.pk %}"></br>далі...</a></p>
                 {% endfor %}
             </div>
         </div>
         <div id="right_content">
-            <div id="blog_text">
-                <h1>Magazine Photo-Shoot</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui.</p>
-            </div>
+            <img src="{% static "images/contact.jpg" %}" width="450" height="450" title="contact" alt="contact" />
         </div>
     </div>
     <!-- end content -->

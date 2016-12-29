@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'briks',
     'blog',
     'gallery',
+    'info',
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,14 @@ STATICFILES_DIRS = [
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = '####'
+EMAIL_HOST_PASSWORD ='###'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
+LIST_OF_EMAIL_RECIPIENTS = '####'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 MEDIA_URL = "/media/"

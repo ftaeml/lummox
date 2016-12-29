@@ -15,6 +15,7 @@ def gallery(request):
 
 
 def album(request, id=None):
+    title_album = Album.objects.filter(id=id)
     images = Limn.objects.filter(album_id=id)
-    context = {"images":images}
+    context = {"images":images, "title_album":title_album}
     return render(request, "gallery/photos.html", context)
