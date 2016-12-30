@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Comment
-#from .forms import CommentForm
+from .forms import CommentForm
 from django.utils.timezone import now
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
@@ -27,25 +27,22 @@ def get_comments(id=None):
 
 
 def post(request, id=None):
-    p = get_object_or_404(Post, pk=id) #Post.objects.get(pk=id)
+    p = get_object_or_404(Post, pk=id)
     context = {"post": p}
     context.update(get_comments(id))
     return render(request, "blog/post.html", context)
 
 
-def comment(request):
+def comment(request, id):
+    post = get_object_or_404(Post, pk=id)
     if request.method == 'POST':
-        form = CommentForm(request.POST, request.FILES)
-        print(form)
+        form = CommentForm(request.POST)
         if form.is_valid():
             p = form.save(commit=False)
             p.published_date = now()
-
+            p.post = post
             p.save()
-            print("saved", p)
-            return redirect("index")
-        else:
-            return render(request, "blog/comment.html", {"form": form})
-
-    form = CommentForm()
+            return redirect("post", id=post.pk)
+    else:
+        form = CommentForm()
     return render(request, "blog/comment.html", {"form": form})

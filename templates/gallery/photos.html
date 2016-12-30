@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% load thumbnail %}
 {% load i18n %}
 {% block content %}
 
@@ -12,13 +13,15 @@
                 <div id="slideshow" class="slideshow"></div>
             </div>
         </div>
-        <div id="thumb-container">
+        <div id="thumb-container"> {# Django comment #}
             <div id="thumbs" class="navigation">
-                <h1>Portfolio One</h1>
+                {% for t in title_album %}
+                    <h1>{{ t.title }}</h1>
+                {% endfor %}
                 <ul class="thumbs noscript">
                     {% for img in images %}
                         <li>
-                            <a class="thumb" href="{{ img.image.url }}"><img width="950" height="450" src=" {{ img.image.url}}" alt="{{ img.description}}" /></a>
+                            <a class="thumb" href="{{ img.image|thumbnail_url:'gallery' }}"><img src="{{ img.image|thumbnail_url:'mini' }}" alt="{{ img.description}}" /></a>
                             <div class="caption">
                                 <div class="image-title portfolio_one">&quot;{{ img.description }}&quot;</div>
                             </div>

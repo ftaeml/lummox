@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load i18n %}
+{% block content %}
+
+    <!-- begin content -->
+    <div id="site_content">
+        <div id="left_content">
+            <h1>Зв’язок</h1>
+            <p>Скористайтеся цією формою щоб надіслати повідомлення.</p>
+            <form id="contact" action="{% url "contact" %}" method="post">
+                {% csrf_token %}
+                <div class="form_settings">
+                    <p><span>Name</span> {{ form.name }} </p>
+                    <p><span>Email Address</span> {{ form.mail }} </p>
+                    <p><span>Message</span> {{ form.mesage }} </p>
+                    <p style="padding-top: 20px"><span>&nbsp;</span><input class="submit" type="submit"  value="надіслати" ></p>
+                </div>
+            </form>
+        </div>
+        <div id="right_content">
+            <img src="{% static "images/mud.jpg" %}" width="450" height="450" title="contact" alt="contact" />
+        </div>
+    </div>
+    <!-- end content -->
+
+{% endblock %}

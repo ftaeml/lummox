@@ -5,5 +5,5 @@ from blog import views
 urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^post/(?P<id>\d+)?$', views.post, name="post"),
-    url(r'^comment/(?P<id>\d+)?$', views.comment, name="comment"),
+    url(r'^post/(?P<id>\d+)/comment/$', views.comment, name="comment"),
 ]

@@ -8,7 +8,7 @@
     <div id="site_content">
         <ul class="slideshow">
             {% for img in images %}
-                <li class="show"><img width="950" height="450" src="{{ img.image.url }}" alt="&quot;{{ img.description }}&quot;"/></li>
+                <li class="show"><img src="{{ img.image|thumbnail_url:'show' }}" alt="{{ img.description }}"/></li>
             {% endfor %}
         </ul>
     </div>

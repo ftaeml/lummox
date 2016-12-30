@@ -17,6 +17,7 @@ class Post(models.Model):
         verbose_name = "Повідомлення"
         verbose_name_plural = "Повідомлення"
 
+
 class Comment(models.Model):
     content = models.TextField(verbose_name="Вміст")
     published_date = models.DateTimeField(auto_created=True, verbose_name="Дата публікації")
