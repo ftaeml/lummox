@@ -24,7 +24,7 @@ urlpatterns = [
                  # url(r'$', views.gallery, name="home"),
                   #    url(r'^briks/', include('briks.urls')),
                   url(r'^blog/', include('blog.urls')),
-                  url(r'^gallery/', include('gallery.urls')),
+                  url(r'^', include('gallery.urls')),
                   url(r'^info/', include('info.urls')),
 
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
