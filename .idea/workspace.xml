@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f5767a1-541f-47ba-ae7f-5d3836afb3bc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/admin.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/apps.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/tests.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/info/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/gallery/albums.html" afterPath="$PROJECT_DIR$/templates/gallery/albums.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/gallery/photos.html" afterPath="$PROJECT_DIR$/templates/gallery/photos.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/info/contact.html" afterPath="$PROJECT_DIR$/templates/info/contact.html" />
     </list>
     <ignored path="lummox.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -220,7 +223,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="debugger.stepping" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -551,7 +554,14 @@
       <option name="project" value="LOCAL" />
       <updated>1483030062005</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ver.0.6">
+      <created>1483103228810</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1483103228810</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -564,9 +574,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32738096" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5" sideWeight="0.49674267" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.49674267" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2559524" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25531915" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -615,7 +625,8 @@
     <MESSAGE value="ver.0.3" />
     <MESSAGE value="ver.0.4" />
     <MESSAGE value="ver.0.5 Додано зворотній зв’язок, клікабельні іконки з посиланнями." />
-    <option name="LAST_COMMIT_MESSAGE" value="ver.0.5 Додано зворотній зв’язок, клікабельні іконки з посиланнями." />
+    <MESSAGE value="ver.0.6" />
+    <option name="LAST_COMMIT_MESSAGE" value="ver.0.6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
