@@ -9,7 +9,7 @@ def albums(request, id=None):
 
 
 def gallery(request):
-    images = Limn.objects.filter(album_id=1)
+    images = Limn.objects.filter(ty_pe_id=3)
     context = {"images": images}
     return render(request, "gallery/index.html", context)
 

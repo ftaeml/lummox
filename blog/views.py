@@ -6,15 +6,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def index(request):
-    all_posts = Post.objects.all().order_by("-published_date")
-    paginator = Paginator(all_posts, 3) # maximum posts on the page
-    page = request.GET.get('page')
-    try:
-        posts = paginator.page(page)
-    except PageNotAnInteger:
-        posts = paginator.page(1)
-    except EmptyPage:
-        posts = paginator.page(paginator.num_pages)
+    posts = Post.objects.all().order_by("-published_date")
 
     context = {"posts": posts}
     return render(request, "blog/index.html", context)
