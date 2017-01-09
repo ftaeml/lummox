@@ -11,8 +11,29 @@
                 {% for post in posts %}
                 <div class="blog"><h2>{{ post.published_date|date:"M" }}</h2><h3>{{ post.published_date|date:"d" }}</h3></div>
                 <h4 class="select"><a href="{% url "post" id=post.pk %}">{{ post.title }}</a></h4>
-                <p>{{ post.content }}<a href="{% url "post" id=post.pk %}"></br>далі...</a></p>
+                <p>{{ post.content|truncatewords:20 }}<a href="{% url "post" id=post.pk %}"></br>далі...</a></p>
                 {% endfor %}
+
+                <div class="pageLink next">
+
+                    {% if posts.has_previous %}
+                        <a href="?page={{ posts.previous_page_number }}">←</a>
+                    {% endif %}
+
+                    {% for num in posts.paginator.page_range %}
+                        {% if num == posts.number %}
+                            <span class="current"><b>{{ num }}</b></span>
+                        {% else %}
+                            <a href="?page={{ num }}"> {{ num }}</a>
+                        {% endif %}
+                    {% endfor %}
+
+                    {% if posts.has_next %}
+                        <a href="?page={{ posts.next_page_number }}">→</a>
+                    {% endif %}
+
+                </div>
+
             </div>
         </div>
         <div id="right_content">
