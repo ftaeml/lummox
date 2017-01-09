@@ -1,15 +1,24 @@
 from django.shortcuts import render
 from .models import Limn, Album
+from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 
 
 def albums(request, id=None):
     paint = Album.objects.filter(type_id=id)
+    paginator = Paginator(paint, 3)
+    page = request.GET.get('page')
+    try:
+        paint = paginator.page(page)
+    except PageNotAnInteger:
+        paint = paginator.page(1)
+    except EmptyPage:
+        paint = paginator.page(paginator.num_pages)
     context = {"paints": paint}
     return render(request, "gallery/albums.html", context)
 
 
 def gallery(request):
-    images = Limn.objects.filter(ty_pe_id=3)
+    images = Limn.objects.filter(ty_pe_id=1)
     context = {"images": images}
     return render(request, "gallery/index.html", context)
 
