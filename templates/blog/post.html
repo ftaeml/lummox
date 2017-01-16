@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% load i18n %}
-{% block content %}
 
+{% block menu %}
+    {% include "menu.html" with is_index=True %}
+{% endblock menu %}
+
+{% block content %}
     <!-- begin content -->
     <div id="site_content">
         <div id="left_content">
@@ -10,7 +14,7 @@
                 <div class="blog"><h2>{{ post.published_date|date:"M" }}</h2><h3>{{ post.published_date|date:"d" }}</h3></div>
                 <h4><a href="{% url "index" %}">{{ post.title }}</a></h4>
                 <p>{{ post.content }} <a href="">read more.....</a></p>
-                <a class="button" href="{% url 'comment' id=post.pk %}">Коментувати</a>
+                <a class="submit" href="{% url 'comment' id=post.pk %}">Коментувати</a>
             </div>
         </div>
         <div id="right_content">
@@ -18,7 +22,7 @@
                 <h1>Коментарі</h1>
                 {% for comment in comments %}
                     <div class="blog"><h2>{{ comment.published_date|date:"M" }}</h2><h3>{{ comment.published_date|date:"d" }}</h3></div>
-                    <p>{{ comment.content }}</p>
+                    <p>{{ comment.content|linebreaksbr }}</p>
                 {% empty %}
                     <p>Без коментарів :(</p>
                {% endfor %}

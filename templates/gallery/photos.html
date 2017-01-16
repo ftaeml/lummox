@@ -2,8 +2,12 @@
 {% load staticfiles %}
 {% load thumbnail %}
 {% load i18n %}
-{% block content %}
 
+    {% block menu %}
+        {% include "menu.html" with is_home=True %}
+    {% endblock menu %}
+
+{% block content %}
     <div id="site_content">
     <!-- start gallery HTML containers -->
     <div class="navigation-container">
@@ -32,6 +36,7 @@
         </div>
         <!-- end gallery HTML containers -->
     </div>
+    <a href="{%  url "albums" id=paint.album.id %}?page={{ pn }}"> Назад</a>
     <!-- end content -->
 
 

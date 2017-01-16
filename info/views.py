@@ -1,6 +1,6 @@
-from django.shortcuts import render, get_object_or_404, redirect
-from django.conf import settings
-from django.core.mail import send_mail
+from django.shortcuts import render
+#from django.conf import settings
+#from django.core.mail import send_mail
 from .forms import ContactForm
 
 
@@ -8,6 +8,8 @@ def contact(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
+#            send_mail('Subject here', 'Here is the message.', 'from@example.com',['ftaeml@gmail.com'], fail_silently=False)
+
             form.save()
             form = ContactForm()
     else:
