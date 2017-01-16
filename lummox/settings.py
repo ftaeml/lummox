@@ -132,12 +132,12 @@ STATICFILES_DIRS = [
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = '####'
-EMAIL_HOST_PASSWORD ='###'
+EMAIL_HOST_USER = '****@gmail.com'
+EMAIL_HOST_PASSWORD ='****'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-LIST_OF_EMAIL_RECIPIENTS = '####'
+LIST_OF_EMAIL_RECIPIENTS = 'ftaeml@gmail.com'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "uploads")
 MEDIA_URL = "/media/"

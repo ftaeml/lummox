@@ -2,8 +2,12 @@
 {% load staticfiles %}
 {% load thumbnail %}
 {% load i18n %}
-{% block content %}
 
+    {% block menu %}
+        {% include "menu.html" with is_home=True %}
+    {% endblock menu %}
+
+{% block content %}
     <!-- begin content -->
     <div id="site_content">
         <ul class="slideshow">

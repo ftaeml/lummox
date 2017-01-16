@@ -1,0 +1,9 @@
+<nav>
+    <ul class="sf-menu" id="nav">
+        {% if is_albums %}<li class="selected"><a href="{% url "home" %}">Альбоми</a></li> {% endif %}
+        <li {% if is_home %}class="selected"{% endif %}><a href="{% url "home" %}">До хати</a></li>
+        <li {% if is_index %}class="selected"{% endif %}><a href="{% url "index" %}">Блог</a></li>
+        <li {% if is_about %}class="selected"{% endif %}><a href="{% url "about" %}">Про нас</a></li>
+        <li {% if is_contact %}class="selected"{% endif %}><a href="{% url "contact" %}">Зв’язок</a></li>
+    </ul>
+</nav>
