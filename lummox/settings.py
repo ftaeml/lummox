@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'easy_thumbnails',
     'crispy_forms',
+    'captcha',
     'blog',
     'gallery',
     'info',

@@ -11,7 +11,9 @@
     <div id="site_content">
         <div id="left_content">
             <h1>Зв’язок</h1>
-            <p>Скористайтеся цією формою щоб надіслати повідомлення.</p>
+            {% if send %}<p>Повідомлення надіслано.</p>
+            {% else %}<p>Скористайтеся цією формою щоб надіслати повідомлення.</p>
+            {% endif %}
             <form id="contact" action="{% url "contact" %}" method="post">
                 {% csrf_token %}
                 <div class="form_settings">
